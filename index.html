@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de cadastro</title>
+
+    <style>
+        fieldset{
+            margin: 10px;
+            border-radius: 10px;
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <form name="signup" onsubmit="alert('Formulário enviado')" method="post">
+        Nome: <input type="text" name="name"/><br>
+        Idade: <input type="number" name="age"/><br>
+        Senha: <input type="password" name="password"/><br>
+        <button type="submit">ENVIAR</button>
+    </form>
+    <br>
+    <form>
+        <label>Text: <input type="text"></label><br>
+        <label>Number: <input type="number" min="0" step="5" max="99"></label><br>
+        <label>Range: <input type="range" min="0" step="5" max="99" value="15"></label><br>
+        <label>Color: <input type="color"></label><br>
+        <label>E-mail: <input type="email"></label><br>
+        <label>URL: <input type="url"></label><br>
+        <label>Date: <input type="date"></label><br>
+        <label>Week: <input type="week"></label><br>
+        <label>Month: <input type="month"></label><br>
+        <label>Checkbox: <input type="checkbox"></label><label><input type="checkbox"></label><br>
+        <label>Radio: <input type="radio" name="radio"></label><label><input type="radio" name="radio"></label><br>
+        <label>Hidden: <input type="hidden"></label><br>
+        <label>File: <input type="file" multiple></label><br>
+        <label>Search: <input type="search"></label><br>
+        <label>Button: <input type="submit" value="Enviar"></label><br>
+    </form>
+    <br>
+    <br>
+    <form method="get">
+        <h3>Você selecionou: pizza de calabresa</h3>
+        <p>Quais opcionais você deseja?</p>
+        <input type="checkbox" name="opcional[]" value="queijo"> + queijo <br>
+        <input type="checkbox" name="opcional[]" value="calabresa"> + calabresa <br>
+        <input type="checkbox" name="opcional[]" value="cebola"> + cebola <br>
+        <p>Borda recheada?</p>
+        <input type="radio" name="borda" value="sim"> Sim <br>
+        <input type="radio" name="borda" value="não"> Não <br>
+
+        <button type="submit">Enviar pedido</button>
+        <br>
+        <br>
+        <button type="button" onmouseover="alert('passou')">Aqui</button>
+    </form>
+    <br>
+    <br>
+    <form onsubmit="">
+        <fieldset>
+            <legend>Cargos</legend>
+            <label>Nome:</label> <input type="text" name="name"> <br>
+            <label>Cargo:</label> <br>
+            <select name="role">
+                <option value="">Selecione o cargo</option>
+                <option value="presidente">presidente</option>
+                <option value="gerente">gerente</option>
+                <option value="diretor">diretor</option>
+            </select>
+        </fieldset>
+        <br>
+        <br>
+        <button type="submit">Clique para enviar</button>
+    </form>
+    <br>
+    <textarea name="Mensagem" cols="30" rows="10"></textarea>
+    <br>
+    <p>Aqui é o Embed</p>
+    <embed src="music.mp4" width="500" height="300">
+    <br>
+    <p>Aqui é o Iframe</p>
+    <iframe src="https://www.dio.me/" width="400" height="500"></iframe>
+</body>
+</html>
